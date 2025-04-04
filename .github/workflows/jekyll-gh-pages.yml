@@ -38,11 +38,8 @@ jobs:
           cd hexo-aircloud-blog
           npm install
           cd ..
-
-      # 4. Build the site
-      - name: Build Hexo site
-        run: |
           hexo clean && hexo generate && hexo serve
+          
 
       # 5. Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
