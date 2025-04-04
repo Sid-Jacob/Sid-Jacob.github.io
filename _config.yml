@@ -11,7 +11,7 @@ description: ""
 keywords:
 author: Sid
 language: zh
-timezone: "Asia/Shanghai"
+timezone: "America/Los_Angeles"
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -28,6 +28,7 @@ public_dir: public
 tag_dir: tags
 archive_dir: archives
 category_dir: categories
+collect_dir: collect
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
