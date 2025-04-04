@@ -29,22 +29,21 @@ jobs:
         with:
           node-version: '22'  # 可以根据需要调整 Node.js 版本
 
-      # 3. Install dependencies
-      - name: Install dependencies
-        run: |
-          npm install
-          cd themes
-          git clone https://github.com/aircloud/hexo-aircloud-blog.git --recursive
-          cd hexo-aircloud-blog
-          npm install
-          cd ..
-          hexo clean && hexo generate && hexo serve
+      # # 3. Install dependencies
+      # - name: Install dependencies
+      #   run: |
+          # npm install
+          # cd themes
+          # git clone https://github.com/aircloud/hexo-aircloud-blog.git --recursive
+          # cd hexo-aircloud-blog
+          # npm install
+          # cd ..
+          # hexo clean && hexo generate && hexo serve
           
 
       # 5. Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: sma11black/hexo-action@v1.0.3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public  # Hexo 默认构建到 public 文件夹
-          publish_branch: gh-pages  # 设置部署到 gh-pages 分支
+
