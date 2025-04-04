@@ -1,6 +1,3 @@
-[submodule "aircloud"]
-	path = aircloud
-	url = https://github.com/aircloud/hexo-theme-aircloud.git
-[submodule "themes/aircloud"]
+[submodule ".deploy_git"]
 	path = themes/aircloud
 	url = https://github.com/aircloud/hexo-theme-aircloud.git
